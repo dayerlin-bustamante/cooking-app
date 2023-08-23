@@ -1,0 +1,118 @@
+.all {
+    margin: 24px 12px;
+    h1 {
+        font-size: 42px;
+        font-family: 'Anton';
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        margin: 12px 0;
+    }
+    h4 {
+        font-family: 'Roboto';
+        margin-bottom: 24px;
+    }
+    .items-box-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        .item-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border: 1px solid rgb(113, 113, 113);
+            border-radius: 6px;
+            p {
+                font-weight: bold;
+                font-size: 16px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            &:hover {
+                border: 1px solid rgb(195, 195, 195);
+                box-shadow: none;
+            }
+            img {
+                margin-bottom: 8px;
+            }
+            .group {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                .badge {
+                    text-align: center;
+                    background-color: crimson;
+                    color: white;
+                    padding: 5px 8px;
+                    border-radius: 4px;
+                }
+                .edit {
+                    margin-top: 4px;
+                }
+            }
+        }
+        @media screen and (min-width: 760px) {
+            .item-box {
+                img {
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 760px) {
+        margin: 48px 12px;
+        h1 {font-size: 46px;}
+    }
+    label {
+        width: 100%;
+    }
+    .alert {
+        position: relative;
+        top: 10;
+        left: 0;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        line-height: 1.8;
+        border-radius: 5px;
+        cursor: hand;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: 400;
+      }
+      
+      .alertCheckbox {
+        display: none;
+      }
+      
+      :checked + .alert {
+        display: none;
+      }
+      
+      .alertText {
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+      }
+      
+      .alertClose {
+        float: right;
+        padding-top: 5px;
+        font-size: 10px;
+      }
+      
+      .clear {
+        clear: both;
+      }
+      
+      .info {
+        background-color: #c6f7b8;
+        border: 1px solid #83cd78;
+        color: #819a77;
+      }
+      
+}

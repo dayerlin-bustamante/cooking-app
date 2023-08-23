@@ -1,0 +1,43 @@
+<div class="row recipi-detail">
+    <hr>
+    <div class="col-xs-7">
+        <div class="col-xs-12">
+            <h3>{{recipe.name}}</h3>
+        </div>
+        <div class="col-xs-12">
+            {{recipe.description}}
+        </div>
+        <div class="col-xs-12">
+            <div class="btn-group" appDropdown>
+                <button class="btn dropdown-toggle" type="button">Manage recipe <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a style="cursor: pointer;" (click)="onAddShoppingList()">add shopping list</a></li>
+                    <li><a style="cursor: pointer;" (click)="onEditRecipe()">edit Recipe</a></li>
+                    <li><a style="cursor: pointer;" (click)="onDelete()">Delete Recipe</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 ingredients-required">
+            <h5>Ingredients required for your recipe</h5>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+                    {{ingredient.name}} 
+                    <span class="badge">
+                        {{ingredient.amount}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-5 sp">
+        <div class="col-xs-12">
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 150px;">
+            <label class="contain">
+                <input checked="checked" type="checkbox">
+                <div class="checkmark"></div>
+            </label>
+        </div>
+    </div>
+</div>
+
+

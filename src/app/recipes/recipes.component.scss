@@ -1,0 +1,18 @@
+.contenido {
+    max-width: 990px;
+    margin: 0 auto;
+    .app-recipes-list {
+        margin-top: 38px;
+        h2 {
+            font-family: 'Lobster';
+            text-align: center;
+            @media screen and (min-width: 760px) {
+                text-align: left;
+            }
+        }
+    }
+    @media screen and (max-width: 760px) {
+        display: flex;
+        flex-direction: column-reverse;
+    } 
+}

@@ -1,0 +1,78 @@
+[
+    {
+      "name": "Hamburguesa Clásica",
+      "description": "Una hamburguesa jugosa con carne de res, lechuga, tomate, cebolla y salsa especial.",
+      "imageUrl": "https://i.blogs.es/5ac783/como-hacer-burritos-de-carne-2-/1366_2000.jpg"
+    },
+    {
+      "name": "Sopa de Tomate",
+      "description": "Una sopa reconfortante hecha con tomates maduros, albahaca fresca y crujientes picatostes.",
+      "imageUrl": "https://recetinas.com/wp-content/uploads/2019/06/sopa-de-tomate.jpg"
+    },
+    {
+      "name": "Pizza Margarita",
+      "description": "Una pizza italiana clásica con base de masa fina, tomate, mozzarella y albahaca.",
+      "imageUrl": "https://img.bekiacocina.com/cocina/0000/238-h.jpg"
+    },
+    {
+      "name": "Salmón a la Parrilla",
+      "description": "Filete de salmón sazonado y a la parrilla, acompañado de espárragos y arroz salvaje.",
+      "imageUrl": "https://es.cravingsjournal.com/wp-content/uploads/2022/09/pescado-a-la-parrilla-5-500x500.jpg"
+    },
+    {
+      "name": "Ensalada de Quinoa",
+      "description": "Una ensalada saludable con quinoa, espinacas, aguacate, nueces y vinagreta balsámica.",
+      "imageUrl": "https://t1.uc.ltmcdn.com/es/posts/2/5/7/como_hacer_una_ensalada_de_quinoa_33752_600_square.jpg"
+    },
+    {
+      "name": "Pastel de Chocolate",
+      "description": "Un delicioso pastel de chocolate con capas suaves y frosting de chocolate negro.",
+      "imageUrl": "https://hazlovegan.com/wp-content/uploads/2021/03/torta-chocolate-vegana-perfecta-2.jpg"
+    },
+    {
+      "name": "Tacos de Pollo",
+      "description": "Tacos rellenos de pollo a la parrilla, cebolla morada, cilantro y salsa de aguacate.",
+      "imageUrl": "https://haycosasmuynuestras.com/wp-content/uploads/2017/01/Tacos-de-pollo-GRANDE.jpg"
+    },
+    {
+      "name": "Risotto de Champiñones",
+      "description": "Risotto cremoso cocinado con arroz Arborio, champiñones, vino blanco y queso parmesano.",
+      "imageUrl": "https://www.cocinaconunitaliano.com/wp-content/uploads/2021/01/risotto-de-champinones.jpg"
+    },
+    {
+      "name": "Ensalada Caprese",
+      "description": "Una ensalada fresca con tomates, mozzarella de búfala, albahaca y aceite de oliva.",
+      "imageUrl": "https://deliciaskitchen.com/wp-content/uploads/2022/07/ensalada-caprese-receta-original-italiana.jpg"
+    },
+    {
+      "name": "Wraps de Pavo",
+      "description": "Wraps de pavo con lechuga, tomate, queso cheddar y aderezo ranchero.",
+      "imageUrl": "https://i.ytimg.com/vi/S_a7JcETOMM/maxresdefault.jpg"
+    },
+    {
+      "name": "Tarta de Limón",
+      "description": "Una tarta refrescante de limón con base de galleta y cobertura de merengue.",
+      "imageUrl": "https://badun.nestle.es/imgserver/v1/80/1290x742/ab713d48a93a-tarta-de-limon.jpg"
+    },
+    {
+      "name": "Pasta Primavera",
+      "description": "Pasta con una mezcla de verduras de temporada salteadas en aceite de oliva y ajo.",
+      "imageUrl": "https://i2.wp.com/nourish-and-fete.com/wp-content/uploads/2021/04/lemony-herb-pasta-primavera-8.jpg"
+    },
+    {
+      "name": "Burritos Vegetarianos",
+      "description": "Burritos rellenos de frijoles, arroz, verduras salteadas y guacamole.",
+      "imageUrl": "https://img.bekiacocina.com/cocina/0000/790-h.jpg"
+    },
+    {
+      "name": "Tiramisú",
+      "description": "Un postre italiano clásico con capas de bizcocho de café y crema de mascarpone.",
+      "imageUrl": "https://cdn7.kiwilimon.com/recetaimagen/35448/640x640/42520.jpg.webp"
+    },
+    {
+      "name": "Pollo al Curry",
+      "description": "Trozos de pollo cocinados en una salsa de curry cremosa, servidos con arroz basmati.",
+      "imageUrl": "https://assets.unileversolutions.com/recipes-v2/34403.jpg"
+    }
+  ]
+  

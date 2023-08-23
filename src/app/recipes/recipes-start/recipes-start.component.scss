@@ -1,0 +1,110 @@
+.text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: 'Anton';
+    font-size: 46px;
+    @media screen and (min-width: 768px) {
+      font-size: 56px;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.card {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 24px;
+}
+.card h2 {
+  margin: 0;
+  margin-top: 6px;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+.card .title {
+  padding: 1rem;
+  text-align: right;
+  color: green;
+  font-weight: bold;
+  font-size: 12px;
+}
+.card .desc {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+.card .actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.card svg {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.img-avatar {
+  width: 60px;
+  height: 57px;
+  position: absolute;
+  border-radius: 50%;
+  border: 6px solid white;
+  background-color: white;
+  top: 36px;
+  left: 60px;
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    height: 86px;
+    top: 15px;
+    left: 85px;
+  }
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+
+.portada {
+  img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: #8bc34a;
+  cursor: pointer;
+  transition:.5s;
+  &:hover{
+    color: #4CAF50  ;
+    transform: rotate(22deg)
+  }
+}

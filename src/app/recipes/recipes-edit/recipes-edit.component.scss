@@ -1,0 +1,17 @@
+
+form {
+    margin-top: 48px;
+    .btn-success {
+        background-color: #9fe870;
+        color: black;
+        border: none;
+    }
+    input.ng-invalid.ng-touched,
+    textarea.ng-invalid.ng-touched {
+        border: 1px solid red;
+    }
+    h3 {
+        font-family: 'Anton';
+        font-size: 32px;
+    }
+}

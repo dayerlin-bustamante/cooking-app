@@ -1,0 +1,75 @@
+.sp {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    align-items: center;
+    width: 100%;
+    button.navbar-toggle {
+        margin: 0;
+        padding: 8px 0;
+        background-color: transparent;
+        border: none;
+        z-index: 10;
+        &:hover {
+            background-color: transparent;
+            border: none;
+        }
+        .burger {
+            background-color: transparent;
+            border: none;
+            &.block {
+                display: flex;
+                width: 40px;
+            }
+            &.none {
+                display: none;
+            }
+        }
+    }
+    @media screen and (min-width: 990px){ 
+        justify-content: space-around;
+    }
+    .ul-sp {
+        display: flex;
+        flex-direction: column;
+        .auth {
+            width: 70px;
+            height: 70px;
+            a.active {
+                padding: 0;
+            }
+        }
+        li {
+            text-align: left;
+        }
+    }
+}
+.ssp {
+    margin: 0 auto;
+    margin-top: 24px;
+    a {
+        color: black;
+        &:hover {
+            color: gray;
+            background-color:  transparent;
+        }
+    }
+    @media screen and (min-width: 990px){
+        .ul-sp {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .navbar-collapse {
+        @media screen and (max-width: 500px){
+            position: absolute;
+            border-top: 1px solid white;
+            top: 66px;
+            right: 35px;
+            background-color: white;
+            padding: 0 16px;
+            z-index: 2;
+
+        }
+    }
+}

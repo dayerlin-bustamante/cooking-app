@@ -1,0 +1,46 @@
+<form [formGroup]="refForms" (ngSubmit)="onSubmit()">
+    <h3>{{name.value }} recipe</h3>
+    <hr>
+    <div class="form-outline mb-4">
+        <label class="form-label" for="name">Name</label>
+        <input type="text" id="name" class="form-control"
+        formControlName="name" #name/>
+    </div>
+  
+    <div class="form-outline mb-4">
+        <label class="form-label" for="imagePath">Image</label>
+        <input type="text" id="imagePath" class="form-control" 
+        formControlName="imagePath" #imagePath/>
+    </div>
+    <div>
+        <img [src]="imagePath.value" [alt]="name.value" width="150px" height="auto" style="margin-top: 16px;">
+    </div>
+  
+    <div class="form-outline mb-4" style="margin-bottom: 16px;">
+        <label class="form-label" for="description">Description</label>
+        <textarea class="form-control" id="description" rows="4"
+        formControlName="description"></textarea>
+    </div>
+
+    <div class="form-group" formArrayName="ingredients">
+        <div class="row" *ngFor="let ingredientCtrl of controls(); let i = index" [formGroupName]="i" style="margin-bottom: 16px;">
+            <div class="col-xs-8">
+                <input type="text" class="form-control"   formControlName="name"/>
+            </div>
+            <div class="col-xs-2">
+                <input type="number" class="form-control"  formControlName="amount"/>
+            </div>
+            <div class="col-xs-2">
+                <button type="button" class="btn btn-danger" (click)="onDeleteIngredient(i)">X</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="col-md-6 col-xs-4" style="margin-right: 65px; padding: 0;">
+        <button type="button" class="btn btn-success" (click)="addNewIngredient()">Add new ingredient</button>
+    </div>
+    <div class="form-outline">
+        <button type="submit" class="btn btn-success" style="margin-right: 20px;" [disabled]="!refForms.valid">Save</button>
+        <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+    </div>
+</form>

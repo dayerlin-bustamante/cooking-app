@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 app-recipes-list">
+			<div class="form-container">
+				<h3 class="title">Register with us</h3>
+				<p>share everyday cooking inspiration</p>
+				<div *ngIf="isLoading" style="text-align: center;">
+					<app-spinner></app-spinner>
+				</div>
+				<div class="alert alert-danger" *ngIf="error">
+					<p>{{ error }}</p>
+				</div>
+				<form #auth="ngForm" (ngSubmit)="onSubmit(auth)" *ngIf="!isLoading">
+					<div class="input-group">
+						<label for="username">Username</label>
+						<input type="text" name="username" id="username" name="email" ngModel required email>
+					</div>
+					<div class="input-group">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" ngModel required minlength="6">
+					</div>
+					<button type="submit" class="sign" [disabled]="!auth.valid">{{ isLoginModo ? 'Login' : 'Sign up' }}</button>
+					<p class="signup">Don't have an account?
+						<button class="btn-p" type="button" (click)="onLoginModo()">{{ isLoginModo ? 'Sign up' : 'Login'  }}</button>
+					</p>
+				</form>
+			</div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+			<app-recipes-start></app-recipes-start>
+        </div>
+    </div>
+</div>

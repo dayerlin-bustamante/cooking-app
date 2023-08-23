@@ -1,0 +1,26 @@
+<div class="text" *ngIf="recipesRandom">
+  <h1>Your recipes <br> for de best cook</h1>
+  <p>New recipe for you</p>
+
+  <div class="card">
+    <div class="img-avatar">
+      <svg height="100px" width="100px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#9fe870;} </style> <g> <path class="st0" d="M255.991,0.005C114.624,0.005,0,114.619,0,255.996c0,141.385,114.624,256,255.991,256 c141.386,0,256.009-114.614,256.009-256C512,114.619,397.377,0.005,255.991,0.005z M339.965,278.891c-0.19,0-0.37-0.01-0.572-0.01 c8.191,22.297,17.115,51.536,17.115,94.156H155.492c0-42.62,8.924-71.859,17.115-94.156c-0.19,0-0.381,0.01-0.572,0.01 c-30.925,0-55.982-25.058-55.982-55.983c0-30.906,25.058-55.964,55.982-55.964c8.905,0,17.325,2.076,24.801,5.791 c11.962-20.22,33.973-33.782,59.173-33.782c25.183,0,47.192,13.562,59.155,33.782c7.476-3.715,15.896-5.791,24.8-5.791 c30.925,0,55.984,25.058,55.984,55.964C395.948,253.834,370.89,278.891,339.965,278.891z"></path> </g> </g></svg>
+    </div>
+    <div class="card-text">
+      <div class="portada">
+        <img [src]="recipesRandom.imageUrl" alt="Image to {{ recipesRandom.name }}">
+      </div>
+      <div class="title-total">   
+        <div class="title">Cooking me ;)</div>
+        <h2>{{ recipesRandom.name }}</h2>
+    
+    <div class="desc">{{ recipesRandom.description }}</div>
+    <div class="actions">
+      <button><i class="far fa-heart"></i></button>
+      <button><i class="far fa-envelope"></i></button>
+      <button><i class="fas fa-user-friends"></i></button>
+    </div></div>
+   
+    </div>
+  </div>
+</div>
